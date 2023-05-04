@@ -1,3 +1,5 @@
+
+
 .card {
     outline-style: outset;
     outline-color: black;
@@ -6,7 +8,8 @@
     max-width: 300px;
     margin: auto;
     text-align: center;
-    
+    vertical-align:middle;
+  
   }
   
   
