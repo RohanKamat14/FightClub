@@ -1,3 +1,37 @@
-<form name="form" action="test.php" method="get">
-  <input type="text" name="subject" id="subject" value="Car Loan">
-</form>
+<html>
+    <head>
+        <link rel="stylesheet" href="/vendors/@form-validation/umd/styles/index.min.css" />
+    </head>
+    <body>
+        <form id="demoForm" method="POST">
+            ...
+            <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+        <script src="/vendors/@form-validation/umd/bundle/popular.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(e) {
+                FormValidation.formValidation(
+                    document.getElementById('demoForm'),
+                    {
+                        fields: {
+                            ...
+                        },
+                        plugins: {
+                            submitButton: new FormValidation.plugins.SubmitButton({
+                                // Optional setting:
+                                // Set it to true if you are using a traditional ASP.Net form
+                                // and there is a custom handler for the submit button
+                                // aspNetButton: false,
+                            }),
+                            ...
+                        },
+                    }
+                );
+            });
+        </script>
+    </body>
+</html>
