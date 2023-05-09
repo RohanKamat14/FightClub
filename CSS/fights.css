@@ -9,11 +9,12 @@ body {
 
 .card {
     position: absolute;
+    vertical-align:middle;
+    display:inline-block;
     top: 100%;
     left: 50%;    
     transform: translate(-50%, -50%);
-    width: 1000px;
-
+    width: auto;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     overflow: hidden;
@@ -89,27 +90,21 @@ body {
     width: auto;
     float: left;
     padding: 10px 20px 10px;
-    box-sizing: center;
-    text-align: center;
+    box-sizing: left;
+    text-align: left;
 }
 
 .team2 {
     width: auto;
     float: right;
     padding: 10px 20px 10px;
-    box-sizing: center;
-    text-align: center;
+    box-sizing: right;
+    text-align: right;
 }
 
 .team1 img,
 .team2 img{
     margin-bottom: 20px; 
-}
-
-.details{
-    width: 200px;
-    min-height: 200px;
-    float: left;
 }
 
 .team1 h3.team-name{
