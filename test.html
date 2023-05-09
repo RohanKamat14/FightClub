@@ -1,37 +1,29 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <link rel="stylesheet" href="/vendors/@form-validation/umd/styles/index.min.css" />
+        <title>Epic Fight On An Epic Beach!</title>
+        <link rel="stylesheet" type="text/css" href="CSS/fights.css">
     </head>
+    
     <body>
-        <form id="demoForm" method="POST">
-            ...
-            <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
-            <button type="submit">Submit</button>
-        </form>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
-        <script src="/vendors/@form-validation/umd/bundle/popular.min.js"></script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function(e) {
-                FormValidation.formValidation(
-                    document.getElementById('demoForm'),
-                    {
-                        fields: {
-                            ...
-                        },
-                        plugins: {
-                            submitButton: new FormValidation.plugins.SubmitButton({
-                                // Optional setting:
-                                // Set it to true if you are using a traditional ASP.Net form
-                                // and there is a custom handler for the submit button
-                                // aspNetButton: false,
-                            }),
-                            ...
-                        },
-                    }
-                );
-            });
-        </script>
+        <div class="card">
+            <h2>Upcoming Match</h2>
+            <div class="match-details">
+                <div class="team1">
+                    <img src="Images/Aurelius.jpg">
+                    <h3 class="team-name">Shark Brawler Jax</h3>
+                </div>
+                <div class="details">
+                    <h3 class="date">July 15, 20:00 PT</h3>
+                    <h1 class="versus">VS</h1>
+                    <h4 class="venue">La Baramba Beach, Heaven Island</h4>
+                </div>
+                <div class="team2">
+                    <img src="Images/Aurelius.jpg" style="height: auto;">
+                    <h3 class="team-name">Octopus Pirate Albert</h3>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
