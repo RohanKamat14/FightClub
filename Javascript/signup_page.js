@@ -58,5 +58,9 @@ function SendMessage() {
     .catch(function (res) {
       console.log(res);
     });
+    setTimeout(() => {
+      document.location.reload();
+    }, 300);
     return false
+  
 }
