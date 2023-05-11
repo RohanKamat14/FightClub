@@ -60,7 +60,7 @@ function SendMessage() {
     });
     setTimeout(() => {
       window.location.reload();
-    }, 300);
+    }, 150);
     return false
   
 }
