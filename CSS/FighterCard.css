@@ -37,3 +37,9 @@
   button:hover, a:hover {
     opacity: 0.7;
   }
+  img {
+    float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
