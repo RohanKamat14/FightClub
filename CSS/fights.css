@@ -4,23 +4,26 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
     position: absolute;
-    top: 100%;
-    left: 50%;    
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
-    background: rgba(255, 255, 255, 0.5);
+    width: 600px;
+    background: rgba(255,255,255,0.5);
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
 }
+
 .card:hover {
     background: #fff;
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
 }
 
 .card:before {
@@ -38,26 +41,26 @@ body {
     transform: skewX(-5deg);
 }
 
-.card:hover:before{
+.card:hover:before {
     left: -50%;
 }
-/* Slider Animation for name */
-.card:after{
+
+.card:after {
     content: '';
     position: absolute;
     bottom: -70%;
     right: -120%;
     width: 100%;
     height: 100%;
-    background: #ff0000;
+    background: #ee0000;
     transition: 0.5s;
     z-index: -1;
     box-sizing: border-box;
-    border-top: 5px solid #b30000;
+    border-top: 5px solid #690000;
     transform: skewX(-5deg);
 }
 
-.card:hover:after{
+.card:hover:after {
     right: -50%;
 }
 
@@ -71,49 +74,67 @@ body {
 }
 
 .card:hover h2 {
-    background: #525252;
-    color:#fff;
+    background: #52527a;
+    color: #fff;
 }
 
-.match-details{
+.match-details {
     position: relative;
 }
 
+.versus {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    background: #52527a;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px auto;
+}
 
 .date {
     margin: 20px 0 0;
 }
 
 .team1 {
-    width: auto;
+    width: 200px;
     float: left;
     padding: 10px 20px 10px;
-    box-sizing: left;
-    text-align: left;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .team2 {
-    width: auto;
-    float: right;
+    width: 200px;
+    float: left;
     padding: 10px 20px 10px;
-    box-sizing: right;
-    text-align: right;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .team1 img,
-.team2 img{
-    margin-bottom: 20px; 
+.team2 img {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.team1 h3.team-name{
+.details {
+    width: 200px;
+    min-height: 200px;
+    float: left;
+    text-align: center;
+}
+
+.team1 h3.team-name {
     text-align: left;
 }
 
-.team2 h3.team-name{
+.team2 h3.team-name {
     text-align: right;
 }
 
 .card:hover .team1 h3.team-name {
-    color:#fff;
-
+    color: #fff;
 }
