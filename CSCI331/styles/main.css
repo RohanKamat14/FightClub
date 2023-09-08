@@ -1,0 +1,62 @@
+html * {
+    font-family: sans-serif;
+  }
+
+h1 {
+    text-align: center;
+    color: darkslategray;
+}
+
+.netid {
+    text-align: center;
+    background-color: yellow;
+}
+
+table,
+th,
+td {
+  padding: 3px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.Parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+img {
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+img:hover {
+    opacity: 1;
+}
+
+.tuth {
+    color: #e0f6ef;
+    background-color: #6ab099;
+}
